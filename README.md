@@ -12,5 +12,3 @@ npm install
 npm run start  -> http server
 npm run webpack  -> bundle
 
-Service worker helps on reload
-
