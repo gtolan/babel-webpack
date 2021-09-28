@@ -6,8 +6,8 @@ require("babel-register");
 
 // file types & file links
 const resource = {
-    js: { bootstrap: '//cdn/bootstrap/bootstrap.min.js' },
-    css: { bootstrap: '//cdn/bootstrap/bootstrap.min.css' },
+    js: { bootstrap: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js' },
+    css: { bootstrap: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css' },
     img: { 'the-girl': '//cdn/img/the-girl.jpg' }
 }
 
@@ -63,7 +63,7 @@ const config = {
         new HtmlReplaceWebpackPlugin([
             {
                 pattern: 'foo',
-                replacement: '`foo` has been replaced with `bar`'
+                replacement: 'webpack found `foo` and replaced with `bar`'
             },
             {
                 pattern: '@@title',

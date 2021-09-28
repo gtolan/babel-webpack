@@ -1,9 +1,12 @@
 import './styles/above-fold-inline.css';
 
-let animal = "dog";
-let array = ["dog","cat","fish"];
+const button = document.getElementById('alertBtn')
+const es6Arrow = () => {
+    alert('es6 transpiled')
+}
+button.addEventListener('click', es6Arrow)
 
 
-let catChoice = array.find(function(anim){ anim === "cat"});
-console.log(catChoice)
-console.log(animal)
+// window.onload = () => {
+//     alert('window loaded')
+// }
